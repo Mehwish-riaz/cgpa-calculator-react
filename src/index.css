@@ -1,0 +1,202 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  background: #f0f4f8;
+}
+
+/* ===== APP WRAPPER ===== */
+.App {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ===== CALCULATOR CARD ===== */
+.calculator-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #2475aa;
+  box-shadow: 0 0 30px #3498db inset, 0 0 15px #3498db;
+  position: relative;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  background: linear-gradient(135deg, #001f3f, #003366, #004080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== DARK MODE BUTTON ===== */
+.dark-toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 6px 12px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: #003366;
+  color: #fff;
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  box-shadow: 0 0 12px #3498db;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+th {
+  background: #3498db;
+  color: #fff;
+}
+
+/* ===== INPUTS ===== */
+input, select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/* ===== BUTTONS ===== */
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 6px;
+  border: 2px solid #3498db;
+  background: linear-gradient(135deg, #001f3f, #003366, #004080);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 15px #3498db;
+}
+
+/* ===== RESULT BOX ===== */
+.result {
+  margin-top: 20px;
+  border: 2px solid #3498db;
+  padding: 15px;
+  border-radius: 12px;
+  background: #ecf9ff;
+  box-shadow: 0 0 18px #3498db inset;
+  text-align: center;
+}
+
+/* ===== DARK MODE ===== */
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.dark-mode .calculator-container {
+  background: #1c1c1c;
+}
+
+.dark-mode th {
+  background: #1f618d;
+}
+
+.dark-mode input,
+.dark-mode select {
+  background: #222;
+  color: white;
+  border: 1px solid #3498db;
+}
+
+.dark-mode header h1 {
+  -webkit-text-fill-color: white !important;
+}
+
+.dark-mode .result {
+  background: #1c1c1c;
+}
+
+/* ===== RESPONSIVE FIX ===== */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .calculator-container {
+    box-shadow: none;
+       width: 100%;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  .dark-toggle {
+    font-size: 1.2rem;
+    padding: 4px 8px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto; 
+  }
+
+  th, td {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .dark-toggle {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  input, select {
+    padding: 4px;
+  }
+}
