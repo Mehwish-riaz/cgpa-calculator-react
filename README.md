@@ -1,16 +1,41 @@
-# React + Vite
+# CGPA Calculator (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **CGPA Calculator** built with **React** and **Vite**, designed for students to calculate their **Cumulative Grade Point Average (CGPA)** easily.  
+Supports multiple courses and semesters, with options to add/remove courses dynamically, and includes a dark/light mode.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Preview
 
-## React Compiler
+Check the live version here:  
+https://cgpa-calculator-react-eube.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Add or remove courses dynamically
+- Input course name, credit hours, and grade
+- Multiple semesters support
+- Calculates **total credits**, **total grade points**, and **final CGPA**
+- Dark/Light mode toggle
+- Export/Print CGPA result
+- Fully responsive design (desktop, tablet, mobile)
+
+---
+
+## ⚡ Installation & Usage
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/Mehwish-riaz/cgpa-calculator-react.git
+## 👩‍💻 Author
+
+---
+**Mishu**  
+Software Engineering Student | Front-End Learner  
+
+---
+
+⭐ If you like this project, don't forget to **star the repository**.
