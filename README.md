@@ -1,4 +1,4 @@
-# CGPA Calculator (React)
+# CGPA Calculator
 
 A responsive **CGPA Calculator** built with **React** and **Vite**, designed for students to calculate their **Cumulative Grade Point Average (CGPA)** easily.  
 Supports multiple courses and semesters, with options to add/remove courses dynamically, and includes a dark/light mode.
@@ -33,9 +33,4 @@ git clone https://github.com/Mehwish-riaz/cgpa-calculator-react.git
 ## 👩‍💻 Author
 
 ---
-**Mishu**  
-Software Engineering Student | Front-End Learner  
-
----
-
 ⭐ If you like this project, don't forget to **star the repository**.
